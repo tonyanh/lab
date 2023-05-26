@@ -1,0 +1,9 @@
+<form [formGroup]="productForm" (ngSubmit)="onHandleEdit()">
+    <div class="form-group">
+        <input type="text" formControlName="name" placeholder="Name Product">
+    </div>
+    <div class="form-group">
+        <input type="text" formControlName="price" placeholder="Price Product">
+    </div>
+    <button type="submit">Submit</button>
+</form>

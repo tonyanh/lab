@@ -1,0 +1,8 @@
+<td>{{index +  1}}</td>
+<td>{{ product.name }}</td>
+<td><img width="50" [src]="product.img"></td>
+<td>{{ product.price }}</td>
+<td>
+    <button class="btn btn-primary" (click)="removeItem(product.id)">Remove</button>
+    <a class="btn btn-info" [routerLink]="'edit/' + product.id">Update</a>
+</td>
